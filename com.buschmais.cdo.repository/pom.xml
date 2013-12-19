@@ -33,6 +33,10 @@
 			<groupId>com.buschmais.cdo</groupId>
 			<artifactId>cdo.json</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>com.buschmais.cdo</groupId>
+			<artifactId>cdo.inject</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>

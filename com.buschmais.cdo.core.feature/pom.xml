@@ -25,6 +25,10 @@
 			<groupId>com.buschmais.cdo</groupId>
 			<artifactId>cdo.impl</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>com.buschmais.cdo</groupId>
+			<artifactId>cdo.inject</artifactId>
+		</dependency>
 	</dependencies>
 
 </project>

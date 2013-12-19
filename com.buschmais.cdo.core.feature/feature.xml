@@ -19,21 +19,28 @@
          id="com.buschmais.cdo.api"
          download-size="0"
          install-size="0"
-         version="0.1.0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.buschmais.cdo.spi"
          download-size="0"
          install-size="0"
-         version="0.1.0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.buschmais.cdo.impl"
          download-size="0"
          install-size="0"
-         version="0.1.0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.buschmais.cdo.inject"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
 </feature>
