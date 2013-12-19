@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<prerequisites>
+		<maven>3.0</maven>
+	</prerequisites>
+
+	<artifactId>com.buschmais.cdo.core.feature</artifactId>
+	<packaging>eclipse-feature</packaging>
+
+	<parent>
+		<groupId>com.buschmais.cdo</groupId>
+		<artifactId>com.buschmais.cdo.releng</artifactId>
+		<version>0.1.0</version>
+		<relativePath>../com.buschmais.cdo.releng</relativePath>
+	</parent>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.buschmais.cdo</groupId>
+			<artifactId>cdo.api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.buschmais.cdo</groupId>
+			<artifactId>cdo.spi</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.buschmais.cdo</groupId>
+			<artifactId>cdo.impl</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>

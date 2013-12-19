@@ -1,0 +1,118 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<prerequisites>
+		<maven>3.0</maven>
+	</prerequisites>
+
+	<groupId>com.buschmais.cdo</groupId>
+	<artifactId>com.buschmais.cdo.releng</artifactId>
+	<version>0.1.0</version>
+	<packaging>pom</packaging>
+
+	<properties>
+		<cdo.version>0.1.0</cdo.version>
+		<tycho.version>0.19.0</tycho.version>
+		<tycho-extras.version>0.19.0</tycho-extras.version>
+		<tycho-repo.url>https://oss.sonatype.org/content/groups/public/</tycho-repo.url>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>orbit</id>
+			<layout>p2</layout>
+			<url>http://download.eclipse.org/tools/orbit/downloads/drops/S20131206110810/repository/</url>
+		</repository>
+		<repository>
+			<id>kepler</id>
+			<layout>p2</layout>
+			<url>http://download.eclipse.org/releases/kepler</url>
+		</repository>
+		<repository>
+			<id>neo4j</id>
+			<layout>p2</layout>
+			<url>http://download.smb-tec.com/updates/smb/thirdparty/updates/</url>
+		</repository>
+	</repositories>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.buschmais.cdo</groupId>
+				<artifactId>cdo.api</artifactId>
+				<version>${cdo.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.buschmais.cdo</groupId>
+				<artifactId>cdo.spi</artifactId>
+				<version>${cdo.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.buschmais.cdo</groupId>
+				<artifactId>cdo.impl</artifactId>
+				<version>${cdo.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.buschmais.cdo</groupId>
+				<artifactId>cdo.neo4j</artifactId>
+				<version>${cdo.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.buschmais.cdo</groupId>
+				<artifactId>cdo.json</artifactId>
+				<version>${cdo.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.eclipse.tycho</groupId>
+					<artifactId>tycho-maven-plugin</artifactId>
+					<version>${tycho.version}</version>
+					<extensions>true</extensions>
+				</plugin>
+				<plugin>
+					<groupId>org.eclipse.tycho</groupId>
+					<artifactId>target-platform-configuration</artifactId>
+					<version>${tycho.version}</version>
+					<configuration>
+						<pomDependencies>consider</pomDependencies>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.eclipse.tycho</groupId>
+					<artifactId>tycho-p2-repository-plugin</artifactId>
+					<version>${tycho.version}</version>
+				</plugin>
+				<plugin>
+					<groupId>org.eclipse.tycho</groupId>
+					<artifactId>tycho-p2-director-plugin</artifactId>
+					<version>${tycho.version}</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+			</plugin>
+		</plugins>
+
+	</build>
+
+	<modules>
+		<module>../com.buschmais.cdo.core.feature</module>
+		<module>../com.buschmais.cdo.neo4j.feature</module>
+		<module>../com.buschmais.cdo.json.feature</module>
+		<module>../com.buschmais.cdo.repository</module>
+	</modules>
+</project>
