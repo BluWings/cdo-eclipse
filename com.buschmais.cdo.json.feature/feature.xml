@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="com.buschmais.cdo.json.feature"
-      version="0.1.0">
+      version="0.2.0.qualifier">
 
    <description url="http://www.example.com/description">
       [Enter Feature Description here.]
@@ -19,7 +19,7 @@
          id="com.buschmais.cdo.json"
          download-size="0"
          install-size="0"
-         version="0.1.0"
+         version="0.2.0.qualifier"
          unpack="false"/>
 
 </feature>
