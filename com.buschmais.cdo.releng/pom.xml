@@ -15,6 +15,7 @@
 		<cdo.version>0.2.0-SNAPSHOT</cdo.version>
 		<tycho.version>0.19.0</tycho.version>
 		<tycho-extras.version>0.19.0</tycho-extras.version>
+		<jackson.version>1.9.13</jackson.version>
 	</properties>
 
 	<repositories>
@@ -66,6 +67,16 @@
 				<groupId>com.buschmais.cdo</groupId>
 				<artifactId>cdo.inject</artifactId>
 				<version>${cdo.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.codehaus.jackson</groupId>
+				<artifactId>jackson-mapper-asl</artifactId>
+				<version>${jackson.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.codehaus.jackson</groupId>
+				<artifactId>jackson-core-asl</artifactId>
+				<version>${jackson.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

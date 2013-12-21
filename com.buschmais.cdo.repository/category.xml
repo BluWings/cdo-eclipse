@@ -9,5 +9,18 @@
    <feature id="com.buschmais.cdo.json.feature" version="0.2.0.qualifier">
       <category name="cdo"/>
    </feature>
+      <bundle id="jackson-core-asl" version="1.9.13">
+      <category name="cdo-dependencies"/>
+   </bundle>
+   <bundle id="jackson-mapper-asl" version="1.9.13">
+      <category name="cdo-dependencies"/>
+   </bundle>
+   <bundle id="javax.validation.api" version="1.1.0.Final">
+      <category name="cdo-dependencies"/>
+   </bundle>
+   <bundle id="org.apache.bval.org.apache.bval.bundle" version="0.5">
+      <category name="cdo-dependencies"/>
+   </bundle>
    <category-def name="cdo" label="Composite Data Objects"/>
+   <category-def name="cdo-dependencies" label="Composite Data Objects (Dependencies)"/>
 </site>
