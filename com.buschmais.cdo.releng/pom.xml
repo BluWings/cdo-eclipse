@@ -32,7 +32,7 @@
 		<repository>
 			<id>neo4j</id>
 			<layout>p2</layout>
-			<url>http://download.smb-tec.com/updates/smb/thirdparty/updates/</url>
+			<url>http://download.smb-tec.com/eclipse/neo4j</url>
 		</repository>
 	</repositories>
 
