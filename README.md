@@ -1,7 +1,7 @@
 cdo-eclipse
 ===========
 
-Provides Eclipse features and p2 repository to use Composite Data Objects for Java in Eclipse environment. 
+Provides Eclipse features and p2 repository to use the [Composite Data Objects for Java](http://www.github.com/buschmais/cdo) Framework in an Eclipse runtime environment. 
 
 
 Build
@@ -10,7 +10,7 @@ Start the Maven build on command line
 
 	mvn -f com.buschmais.cdo.releng/pom.xml clean package
 
-it will produce `com.buschmais.cdo.repository/target/repository` that containts Cdo and dependencies. 
+it will produce `com.buschmais.cdo.repository/target/repository` that contains Cdo and dependencies. 
 
 
 Continuous Build
