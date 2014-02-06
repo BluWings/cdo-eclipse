@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature id="com.buschmais.cdo.core.feature" version="0.2.0.qualifier">
+   <feature id="com.buschmais.cdo.core.feature" version="0.0.0">
       <category name="cdo"/>
    </feature>
-   <feature id="com.buschmais.cdo.neo4j.feature" version="0.2.0.qualifier">
+   <feature id="com.buschmais.cdo.neo4j.feature" version="0.0.0">
       <category name="cdo"/>
    </feature>
-   <feature id="com.buschmais.cdo.json.feature" version="0.2.0.qualifier">
+   <feature id="com.buschmais.cdo.json.feature" version="0.0.0">
       <category name="cdo"/>
    </feature>
       <bundle id="jackson-core-asl" version="1.9.13">
