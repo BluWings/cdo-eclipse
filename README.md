@@ -1,7 +1,7 @@
 cdo-eclipse
 ===========
 
-Provides Eclipse features and p2 repository to use the [Composite Data Objects for Java](http://www.github.com/buschmais/cdo) Framework in an Eclipse runtime environment. 
+Provides Eclipse features and p2 repository to use the [Composite Data Objects for Java](http://www.github.com/buschmais/cdo-neo4j) Framework in an Eclipse runtime environment. 
 
 
 Build
