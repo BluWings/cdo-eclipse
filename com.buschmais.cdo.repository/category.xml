@@ -3,13 +3,22 @@
    <feature id="com.buschmais.cdo.core.feature" version="0.0.0">
       <category name="cdo"/>
    </feature>
+   <feature id="com.buschmais.cdo.core.source.feature" version="0.0.0">
+      <category name="cdo"/>
+   </feature>
    <feature id="com.buschmais.cdo.neo4j.feature" version="0.0.0">
+      <category name="cdo"/>
+   </feature>
+   <feature id="com.buschmais.cdo.neo4j.source.feature" version="0.0.0">
       <category name="cdo"/>
    </feature>
    <feature id="com.buschmais.cdo.json.feature" version="0.0.0">
       <category name="cdo"/>
    </feature>
-      <bundle id="jackson-core-asl" version="1.9.13">
+   <feature id="com.buschmais.cdo.json.source.feature" version="0.0.0">
+      <category name="cdo"/>
+   </feature>
+   <bundle id="jackson-core-asl" version="1.9.13">
       <category name="cdo-dependencies"/>
    </bundle>
    <bundle id="jackson-mapper-asl" version="1.9.13">

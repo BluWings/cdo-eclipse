@@ -45,29 +45,65 @@
 			</dependency>
 			<dependency>
 				<groupId>com.buschmais.cdo</groupId>
+				<artifactId>cdo.api</artifactId>
+				<version>${cdo.version}</version>
+				<classifier>sources</classifier>
+			</dependency>
+			<dependency>
+				<groupId>com.buschmais.cdo</groupId>
 				<artifactId>cdo.spi</artifactId>
 				<version>${cdo.version}</version>
 			</dependency>
+            <dependency>
+                <groupId>com.buschmais.cdo</groupId>
+                <artifactId>cdo.spi</artifactId>
+                <version>${cdo.version}</version>
+                <classifier>sources</classifier>
+            </dependency>
 			<dependency>
 				<groupId>com.buschmais.cdo</groupId>
 				<artifactId>cdo.impl</artifactId>
 				<version>${cdo.version}</version>
 			</dependency>
+            <dependency>
+                <groupId>com.buschmais.cdo</groupId>
+                <artifactId>cdo.impl</artifactId>
+                <version>${cdo.version}</version>
+                <classifier>sources</classifier>
+            </dependency>
 			<dependency>
 				<groupId>com.buschmais.cdo</groupId>
 				<artifactId>cdo.neo4j</artifactId>
 				<version>${cdo.version}</version>
 			</dependency>
+            <dependency>
+                <groupId>com.buschmais.cdo</groupId>
+                <artifactId>cdo.neo4j</artifactId>
+                <version>${cdo.version}</version>
+                <classifier>sources</classifier>
+            </dependency>
 			<dependency>
 				<groupId>com.buschmais.cdo</groupId>
 				<artifactId>cdo.json</artifactId>
 				<version>${cdo.version}</version>
 			</dependency>
+            <dependency>
+                <groupId>com.buschmais.cdo</groupId>
+                <artifactId>cdo.json</artifactId>
+                <version>${cdo.version}</version>
+                <classifier>sources</classifier>
+            </dependency>
 			<dependency>
 				<groupId>com.buschmais.cdo</groupId>
 				<artifactId>cdo.inject</artifactId>
 				<version>${cdo.version}</version>
 			</dependency>
+            <dependency>
+                <groupId>com.buschmais.cdo</groupId>
+                <artifactId>cdo.inject</artifactId>
+                <version>${cdo.version}</version>
+                <classifier>sources</classifier>
+            </dependency>
 			<dependency>
 				<groupId>org.codehaus.jackson</groupId>
 				<artifactId>jackson-mapper-asl</artifactId>
@@ -160,8 +196,11 @@
 
 	<modules>
 		<module>../com.buschmais.cdo.core.feature</module>
+        <module>../com.buschmais.cdo.core.source.feature</module>
 		<module>../com.buschmais.cdo.neo4j.feature</module>
+        <module>../com.buschmais.cdo.neo4j.source.feature</module>
 		<module>../com.buschmais.cdo.json.feature</module>
+        <module>../com.buschmais.cdo.json.source.feature</module>
 		<module>../com.buschmais.cdo.repository</module>
 	</modules>
 </project>

@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.buschmais.cdo</groupId>
+        <artifactId>com.buschmais.cdo.releng</artifactId>
+        <version>0.2.0-SNAPSHOT</version>
+        <relativePath>../com.buschmais.cdo.releng/pom.xml</relativePath>
+    </parent>
+
+    <artifactId>com.buschmais.cdo.json.source.feature</artifactId>
+    <packaging>eclipse-feature</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.buschmais.cdo</groupId>
+            <artifactId>cdo.json</artifactId>
+            <classifier>sources</classifier>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.eclipse.tycho.extras</groupId>
+                <artifactId>tycho-source-feature-plugin</artifactId>
+                <version>${tycho-extras.version}</version>
+                <executions>
+                    <execution>
+                        <id>source-feature</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>source-feature</goal>
+                        </goals>
+                        <configuration>
+                            <skip>true</skip>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
