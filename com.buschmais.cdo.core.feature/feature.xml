@@ -2,7 +2,7 @@
 <feature
       id="com.buschmais.cdo.core.feature"
       label="Composite Data Objects - Core"
-      version="0.2.0.qualifier">
+      version="0.2.0.201403202151">
 
    <description>
       Composite Data Objects - Core Feature.

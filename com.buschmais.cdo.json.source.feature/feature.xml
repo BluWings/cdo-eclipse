@@ -2,7 +2,7 @@
 <feature
       id="com.buschmais.cdo.json.source.feature"
       label="Composite Data Objects - JSON File Store Binding (Sources)"
-      version="0.2.0.qualifier">
+      version="0.2.0.201403202151">
 
    <description>
       Composite Data Objects - JSON File Store Binding Feature.
