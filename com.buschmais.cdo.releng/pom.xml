@@ -12,7 +12,7 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<cdo.version>0.2.0-SNAPSHOT</cdo.version>
+		<cdo.version>0.3.0-SNAPSHOT</cdo.version>
 		<tycho.version>0.19.0</tycho.version>
 		<tycho-extras.version>0.19.0</tycho-extras.version>
 		<jackson.version>1.9.13</jackson.version>
