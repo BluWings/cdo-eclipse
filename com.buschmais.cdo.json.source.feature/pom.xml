@@ -5,7 +5,7 @@
     <parent>
         <groupId>com.buschmais.cdo</groupId>
         <artifactId>com.buschmais.cdo.releng</artifactId>
-        <version>0.3.0-SNAPSHOT</version>
+        <version>0.2.1.201403202222</version>
         <relativePath>../com.buschmais.cdo.releng/pom.xml</relativePath>
     </parent>
 
