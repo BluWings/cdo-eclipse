@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="com.buschmais.cdo.neo4j.source.feature"
-      label="Composite Data Objects - Neo4j Binding (Sources)"
+      id="com.buschmais.xo.core.source.feature"
+      label="eXtended Objects - Core (Sources)"
       version="0.3.0.qualifier">
 
    <description>
-      Composite Data Objects - Neo4j Binding Feature.
+      eXtended Objects - Core Feature.
    </description>
 
    <license url="">
@@ -213,7 +213,28 @@
    </license>
 
    <plugin
-         id="com.buschmais.cdo.neo4j.source"
+         id="com.buschmais.xo.api.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.buschmais.xo.spi.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.buschmais.xo.impl.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.buschmais.xo.inject.source"
          download-size="0"
          install-size="0"
          version="0.0.0"

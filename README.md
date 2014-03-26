@@ -1,19 +1,19 @@
-cdo-eclipse
+xo-eclipse
 ===========
 
-Provides Eclipse features and p2 repository to use the [Composite Data Objects for Java](http://www.github.com/buschmais/cdo-neo4j) Framework in an Eclipse runtime environment. 
+Provides Eclipse features and p2 repository to use the [eXtended Objects] (http://www.github.com/buschmais/xo) Framework in an Eclipse runtime environment. 
 
 
 Build
 -----
 Start the Maven build on command line
 
-	mvn -f com.buschmais.cdo.releng/pom.xml clean package
+	mvn -f com.buschmais.xo.releng/pom.xml clean package
 
-it will produce `com.buschmais.cdo.repository/target/repository` that contains Cdo and dependencies. 
+it will produce `com.buschmais.xo.repository/target/repository` that contains  and dependencies. 
 
 
 Continuous Build
 ----------------
 
-[![Build Status](https://secure.travis-ci.org/BluWings/cdo-eclipse.png)](http://travis-ci.org/BluWings/cdo-eclipse)
+[![Build Status](https://secure.travis-ci.org/BluWings/xo-eclipse.png)](http://travis-ci.org/BluWings/xo-eclipse)

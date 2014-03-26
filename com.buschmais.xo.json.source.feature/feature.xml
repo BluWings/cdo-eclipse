@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="com.buschmais.cdo.core.feature"
-      label="Composite Data Objects - Core"
+      id="com.buschmais.xo.json.source.feature"
+      label="eXtended Objects - JSON File Store Binding (Sources)"
       version="0.3.0.qualifier">
 
    <description>
-      Composite Data Objects - Core Feature.
+      eXtended Objects - JSON File Store Binding Feature.
    </description>
 
    <license url="">
@@ -213,28 +213,7 @@
    </license>
 
    <plugin
-         id="com.buschmais.cdo.api"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="com.buschmais.cdo.spi"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="com.buschmais.cdo.impl"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="com.buschmais.cdo.inject"
+         id="com.buschmais.xo.json.source"
          download-size="0"
          install-size="0"
          version="0.0.0"

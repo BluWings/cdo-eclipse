@@ -3,19 +3,19 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.buschmais.cdo</groupId>
-        <artifactId>com.buschmais.cdo.releng</artifactId>
+        <groupId>com.buschmais.xo</groupId>
+        <artifactId>com.buschmais.xo.releng</artifactId>
         <version>0.3.0-SNAPSHOT</version>
-        <relativePath>../com.buschmais.cdo.releng/pom.xml</relativePath>
+        <relativePath>../com.buschmais.xo.releng/pom.xml</relativePath>
     </parent>
 
-    <artifactId>com.buschmais.cdo.json.source.feature</artifactId>
+    <artifactId>com.buschmais.xo.neo4j.source.feature</artifactId>
     <packaging>eclipse-feature</packaging>
 
     <dependencies>
         <dependency>
-            <groupId>com.buschmais.cdo</groupId>
-            <artifactId>cdo.json</artifactId>
+            <groupId>com.buschmais.xo</groupId>
+            <artifactId>xo.neo4j</artifactId>
             <classifier>sources</classifier>
         </dependency>
     </dependencies>

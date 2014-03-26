@@ -6,13 +6,13 @@
 		<maven>3.0</maven>
 	</prerequisites>
 
-	<groupId>com.buschmais.cdo</groupId>
-	<artifactId>com.buschmais.cdo.releng</artifactId>
+	<groupId>com.buschmais.xo</groupId>
+	<artifactId>com.buschmais.xo.releng</artifactId>
 	<version>0.3.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<properties>
-		<cdo.version>0.3.0-SNAPSHOT</cdo.version>
+		<xo.version>0.3.0-SNAPSHOT</xo.version>
 		<tycho.version>0.19.0</tycho.version>
 		<tycho-extras.version>0.19.0</tycho-extras.version>
 		<jackson.version>1.9.13</jackson.version>
@@ -39,69 +39,69 @@
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
-				<groupId>com.buschmais.cdo</groupId>
-				<artifactId>cdo.api</artifactId>
-				<version>${cdo.version}</version>
+				<groupId>com.buschmais.xo</groupId>
+				<artifactId>xo.api</artifactId>
+				<version>${xo.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.buschmais.cdo</groupId>
-				<artifactId>cdo.api</artifactId>
-				<version>${cdo.version}</version>
+				<groupId>com.buschmais.xo</groupId>
+				<artifactId>xo.api</artifactId>
+				<version>${xo.version}</version>
 				<classifier>sources</classifier>
 			</dependency>
 			<dependency>
-				<groupId>com.buschmais.cdo</groupId>
-				<artifactId>cdo.spi</artifactId>
-				<version>${cdo.version}</version>
+				<groupId>com.buschmais.xo</groupId>
+				<artifactId>xo.spi</artifactId>
+				<version>${xo.version}</version>
 			</dependency>
             <dependency>
-                <groupId>com.buschmais.cdo</groupId>
-                <artifactId>cdo.spi</artifactId>
-                <version>${cdo.version}</version>
+                <groupId>com.buschmais.xo</groupId>
+                <artifactId>xo.spi</artifactId>
+                <version>${xo.version}</version>
                 <classifier>sources</classifier>
             </dependency>
 			<dependency>
-				<groupId>com.buschmais.cdo</groupId>
-				<artifactId>cdo.impl</artifactId>
-				<version>${cdo.version}</version>
+				<groupId>com.buschmais.xo</groupId>
+				<artifactId>xo.impl</artifactId>
+				<version>${xo.version}</version>
 			</dependency>
             <dependency>
-                <groupId>com.buschmais.cdo</groupId>
-                <artifactId>cdo.impl</artifactId>
-                <version>${cdo.version}</version>
+                <groupId>com.buschmais.xo</groupId>
+                <artifactId>xo.impl</artifactId>
+                <version>${xo.version}</version>
                 <classifier>sources</classifier>
             </dependency>
 			<dependency>
-				<groupId>com.buschmais.cdo</groupId>
-				<artifactId>cdo.neo4j</artifactId>
-				<version>${cdo.version}</version>
+				<groupId>com.buschmais.xo</groupId>
+				<artifactId>xo.neo4j</artifactId>
+				<version>${xo.version}</version>
 			</dependency>
             <dependency>
-                <groupId>com.buschmais.cdo</groupId>
-                <artifactId>cdo.neo4j</artifactId>
-                <version>${cdo.version}</version>
+                <groupId>com.buschmais.xo</groupId>
+                <artifactId>xo.neo4j</artifactId>
+                <version>${xo.version}</version>
                 <classifier>sources</classifier>
             </dependency>
 			<dependency>
-				<groupId>com.buschmais.cdo</groupId>
-				<artifactId>cdo.json</artifactId>
-				<version>${cdo.version}</version>
+				<groupId>com.buschmais.xo</groupId>
+				<artifactId>xo.json</artifactId>
+				<version>${xo.version}</version>
 			</dependency>
             <dependency>
-                <groupId>com.buschmais.cdo</groupId>
-                <artifactId>cdo.json</artifactId>
-                <version>${cdo.version}</version>
+                <groupId>com.buschmais.xo</groupId>
+                <artifactId>xo.json</artifactId>
+                <version>${xo.version}</version>
                 <classifier>sources</classifier>
             </dependency>
 			<dependency>
-				<groupId>com.buschmais.cdo</groupId>
-				<artifactId>cdo.inject</artifactId>
-				<version>${cdo.version}</version>
+				<groupId>com.buschmais.xo</groupId>
+				<artifactId>xo.inject</artifactId>
+				<version>${xo.version}</version>
 			</dependency>
             <dependency>
-                <groupId>com.buschmais.cdo</groupId>
-                <artifactId>cdo.inject</artifactId>
-                <version>${cdo.version}</version>
+                <groupId>com.buschmais.xo</groupId>
+                <artifactId>xo.inject</artifactId>
+                <version>${xo.version}</version>
                 <classifier>sources</classifier>
             </dependency>
 			<dependency>
@@ -195,12 +195,12 @@
 	</build>
 
 	<modules>
-		<module>../com.buschmais.cdo.core.feature</module>
-        <module>../com.buschmais.cdo.core.source.feature</module>
-		<module>../com.buschmais.cdo.neo4j.feature</module>
-        <module>../com.buschmais.cdo.neo4j.source.feature</module>
-		<module>../com.buschmais.cdo.json.feature</module>
-        <module>../com.buschmais.cdo.json.source.feature</module>
-		<module>../com.buschmais.cdo.repository</module>
+		<module>../com.buschmais.xo.core.feature</module>
+        <module>../com.buschmais.xo.core.source.feature</module>
+		<module>../com.buschmais.xo.neo4j.feature</module>
+        <module>../com.buschmais.xo.neo4j.source.feature</module>
+		<module>../com.buschmais.xo.json.feature</module>
+        <module>../com.buschmais.xo.json.source.feature</module>
+		<module>../com.buschmais.xo.repository</module>
 	</modules>
 </project>
