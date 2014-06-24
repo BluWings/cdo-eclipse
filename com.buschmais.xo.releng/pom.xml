@@ -31,7 +31,7 @@
             <url>http://download.eclipse.org/tools/orbit/downloads/drops/R20140525021250/repository/</url>
         </repository>
         <repository>
-            <id>kepler</id>
+            <id>luna</id>
             <layout>p2</layout>
             <url>http://download.eclipse.org/releases/luna</url>
         </repository>
