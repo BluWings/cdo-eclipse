@@ -1,103 +1,103 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-	<artifactId>com.buschmais.xo.repository</artifactId>
-	<packaging>eclipse-repository</packaging>
+    <artifactId>com.buschmais.xo.repository</artifactId>
+    <packaging>eclipse-repository</packaging>
 
-	<parent>
-		<groupId>com.buschmais.xo</groupId>
-		<artifactId>com.buschmais.xo.releng</artifactId>
-		<version>0.4.0-SNAPSHOT</version>
-		<relativePath>../com.buschmais.xo.releng</relativePath>
-	</parent>
+    <parent>
+        <groupId>com.buschmais.xo</groupId>
+        <artifactId>com.buschmais.xo.releng</artifactId>
+        <version>0.4.0-SNAPSHOT</version>
+        <relativePath>../com.buschmais.xo.releng</relativePath>
+    </parent>
 
-	<dependencies>
-		<dependency>
-			<groupId>com.buschmais.xo</groupId>
-			<artifactId>xo.api</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.buschmais.xo</groupId>
-			<artifactId>xo.api</artifactId>
-			<classifier>sources</classifier>
-		</dependency>
-		<dependency>
-			<groupId>com.buschmais.xo</groupId>
-			<artifactId>xo.spi</artifactId>
-		</dependency>
+    <dependencies>
+        <dependency>
+            <groupId>com.buschmais.xo</groupId>
+            <artifactId>xo.api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.buschmais.xo</groupId>
+            <artifactId>xo.api</artifactId>
+            <classifier>sources</classifier>
+        </dependency>
+        <dependency>
+            <groupId>com.buschmais.xo</groupId>
+            <artifactId>xo.spi</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.buschmais.xo</groupId>
             <artifactId>xo.spi</artifactId>
             <classifier>sources</classifier>
         </dependency>
-		<dependency>
-			<groupId>com.buschmais.xo</groupId>
-			<artifactId>xo.impl</artifactId>
-		</dependency>
-		<dependency>
+        <dependency>
+            <groupId>com.buschmais.xo</groupId>
+            <artifactId>xo.impl</artifactId>
+        </dependency>
+        <dependency>
             <groupId>com.buschmais.xo</groupId>
             <artifactId>xo.impl</artifactId>
             <classifier>sources</classifier>
         </dependency>
-		<dependency>
-			<groupId>com.buschmais.xo</groupId>
-			<artifactId>xo.neo4j</artifactId>
-		</dependency>
-		<dependency>
+        <dependency>
+            <groupId>com.buschmais.xo</groupId>
+            <artifactId>xo.neo4j</artifactId>
+        </dependency>
+        <dependency>
             <groupId>com.buschmais.xo</groupId>
             <artifactId>xo.neo4j</artifactId>
             <classifier>sources</classifier>
         </dependency>
-		<dependency>
-			<groupId>com.buschmais.xo</groupId>
-			<artifactId>xo.json</artifactId>
-		</dependency>
+        <dependency>
+            <groupId>com.buschmais.xo</groupId>
+            <artifactId>xo.json</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.buschmais.xo</groupId>
             <artifactId>xo.json</artifactId>
             <classifier>sources</classifier>
         </dependency>
-		<dependency>
-			<groupId>com.buschmais.xo</groupId>
-			<artifactId>xo.inject</artifactId>
-		</dependency>
+        <dependency>
+            <groupId>com.buschmais.xo</groupId>
+            <artifactId>xo.inject</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.buschmais.xo</groupId>
             <artifactId>xo.inject</artifactId>
             <classifier>sources</classifier>
         </dependency>
-		<dependency>
-			<groupId>org.codehaus.jackson</groupId>
-			<artifactId>jackson-mapper-asl</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.codehaus.jackson</groupId>
-			<artifactId>jackson-core-asl</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>javax.validation</groupId>
-			<artifactId>validation-api</artifactId>
-			<version>1.1.0.Final</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.bval</groupId>
-			<artifactId>org.apache.bval.bundle</artifactId>
-			<version>0.5</version>
-		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-core-asl</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>1.1.0.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.bval</groupId>
+            <artifactId>org.apache.bval.bundle</artifactId>
+            <version>0.5</version>
+        </dependency>
+    </dependencies>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>tycho-maven-plugin</artifactId>
-				<extensions>true</extensions>
-			</plugin>
-			<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>target-platform-configuration</artifactId>
-			</plugin>
-		</plugins>
-	</build>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.eclipse.tycho</groupId>
+                <artifactId>tycho-maven-plugin</artifactId>
+                <extensions>true</extensions>
+            </plugin>
+            <plugin>
+                <groupId>org.eclipse.tycho</groupId>
+                <artifactId>target-platform-configuration</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>

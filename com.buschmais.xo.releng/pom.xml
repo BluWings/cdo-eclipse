@@ -1,206 +1,212 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-	<prerequisites>
-		<maven>3.0</maven>
-	</prerequisites>
+    <prerequisites>
+        <maven>3.0</maven>
+    </prerequisites>
 
-	<groupId>com.buschmais.xo</groupId>
-	<artifactId>com.buschmais.xo.releng</artifactId>
-	<version>0.4.0-SNAPSHOT</version>
-	<packaging>pom</packaging>
+    <groupId>com.buschmais.xo</groupId>
+    <artifactId>com.buschmais.xo.releng</artifactId>
+    <version>0.4.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
-	<properties>
-		<xo.version>${project.version}</xo.version>
-		<tycho.version>0.20.0</tycho.version>
-		<tycho-extras.version>0.20.0</tycho-extras.version>
-		<jackson.version>1.9.13</jackson.version>
-	</properties>
+    <properties>
+        <xo.version>${project.version}</xo.version>
+        <tycho.version>0.20.0</tycho.version>
+        <tycho-extras.version>0.20.0</tycho-extras.version>
+        <jackson.version>1.9.13</jackson.version>
+    </properties>
 
-	<repositories>
-		<repository>
-			<id>orbit</id>
-			<layout>p2</layout>
-			<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20140525021250/repository/</url>
-		</repository>
-		<repository>
-			<id>kepler</id>
-			<layout>p2</layout>
-			<url>http://download.eclipse.org/releases/luna</url>
-		</repository>
-		<repository>
-			<id>neo4j</id>
-			<layout>p2</layout>
-			<url>http://download.smb-tec.com/eclipse/neo4j</url>
-		</repository>
-	</repositories>
+    <scm>
+        <connection>scm:git:git@github.com:BluWings/xo-eclipse.git</connection>
+        <url>git@github.com:BluWings/xo-eclipse.git</url>
+        <developerConnection>scm:git:git@github.com:BluWings/xo-eclipse.git</developerConnection>
+    </scm>
 
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>com.buschmais.xo</groupId>
-				<artifactId>xo.api</artifactId>
-				<version>${xo.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.buschmais.xo</groupId>
-				<artifactId>xo.api</artifactId>
-				<version>${xo.version}</version>
-				<classifier>sources</classifier>
-			</dependency>
-			<dependency>
-				<groupId>com.buschmais.xo</groupId>
-				<artifactId>xo.spi</artifactId>
-				<version>${xo.version}</version>
-			</dependency>
+    <repositories>
+        <repository>
+            <id>orbit</id>
+            <layout>p2</layout>
+            <url>http://download.eclipse.org/tools/orbit/downloads/drops/R20140525021250/repository/</url>
+        </repository>
+        <repository>
+            <id>kepler</id>
+            <layout>p2</layout>
+            <url>http://download.eclipse.org/releases/luna</url>
+        </repository>
+        <repository>
+            <id>neo4j</id>
+            <layout>p2</layout>
+            <url>http://download.smb-tec.com/eclipse/neo4j</url>
+        </repository>
+    </repositories>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.buschmais.xo</groupId>
+                <artifactId>xo.api</artifactId>
+                <version>${xo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.buschmais.xo</groupId>
+                <artifactId>xo.api</artifactId>
+                <version>${xo.version}</version>
+                <classifier>sources</classifier>
+            </dependency>
+            <dependency>
+                <groupId>com.buschmais.xo</groupId>
+                <artifactId>xo.spi</artifactId>
+                <version>${xo.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.buschmais.xo</groupId>
                 <artifactId>xo.spi</artifactId>
                 <version>${xo.version}</version>
                 <classifier>sources</classifier>
             </dependency>
-			<dependency>
-				<groupId>com.buschmais.xo</groupId>
-				<artifactId>xo.impl</artifactId>
-				<version>${xo.version}</version>
-			</dependency>
+            <dependency>
+                <groupId>com.buschmais.xo</groupId>
+                <artifactId>xo.impl</artifactId>
+                <version>${xo.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.buschmais.xo</groupId>
                 <artifactId>xo.impl</artifactId>
                 <version>${xo.version}</version>
                 <classifier>sources</classifier>
             </dependency>
-			<dependency>
-				<groupId>com.buschmais.xo</groupId>
-				<artifactId>xo.neo4j</artifactId>
-				<version>${xo.version}</version>
-			</dependency>
+            <dependency>
+                <groupId>com.buschmais.xo</groupId>
+                <artifactId>xo.neo4j</artifactId>
+                <version>${xo.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.buschmais.xo</groupId>
                 <artifactId>xo.neo4j</artifactId>
                 <version>${xo.version}</version>
                 <classifier>sources</classifier>
             </dependency>
-			<dependency>
-				<groupId>com.buschmais.xo</groupId>
-				<artifactId>xo.json</artifactId>
-				<version>${xo.version}</version>
-			</dependency>
+            <dependency>
+                <groupId>com.buschmais.xo</groupId>
+                <artifactId>xo.json</artifactId>
+                <version>${xo.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.buschmais.xo</groupId>
                 <artifactId>xo.json</artifactId>
                 <version>${xo.version}</version>
                 <classifier>sources</classifier>
             </dependency>
-			<dependency>
-				<groupId>com.buschmais.xo</groupId>
-				<artifactId>xo.inject</artifactId>
-				<version>${xo.version}</version>
-			</dependency>
+            <dependency>
+                <groupId>com.buschmais.xo</groupId>
+                <artifactId>xo.inject</artifactId>
+                <version>${xo.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.buschmais.xo</groupId>
                 <artifactId>xo.inject</artifactId>
                 <version>${xo.version}</version>
                 <classifier>sources</classifier>
             </dependency>
-			<dependency>
-				<groupId>org.codehaus.jackson</groupId>
-				<artifactId>jackson-mapper-asl</artifactId>
-				<version>${jackson.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.codehaus.jackson</groupId>
-				<artifactId>jackson-core-asl</artifactId>
-				<version>${jackson.version}</version>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
+            <dependency>
+                <groupId>org.codehaus.jackson</groupId>
+                <artifactId>jackson-mapper-asl</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.codehaus.jackson</groupId>
+                <artifactId>jackson-core-asl</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
-	<build>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.eclipse.tycho</groupId>
-					<artifactId>tycho-maven-plugin</artifactId>
-					<version>${tycho.version}</version>
-					<extensions>true</extensions>
-				</plugin>
-				<plugin>
-					<groupId>org.eclipse.tycho</groupId>
-					<artifactId>target-platform-configuration</artifactId>
-					<version>${tycho.version}</version>
-					<configuration>
-						<pomDependencies>consider</pomDependencies>
-					</configuration>
-				</plugin>
-				<plugin>
-					<groupId>org.eclipse.tycho</groupId>
-					<artifactId>tycho-p2-repository-plugin</artifactId>
-					<version>${tycho.version}</version>
-				</plugin>
-				<plugin>
-					<groupId>org.eclipse.tycho</groupId>
-					<artifactId>tycho-p2-director-plugin</artifactId>
-					<version>${tycho.version}</version>
-				</plugin>
-			</plugins>
-		</pluginManagement>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.eclipse.tycho</groupId>
+                    <artifactId>tycho-maven-plugin</artifactId>
+                    <version>${tycho.version}</version>
+                    <extensions>true</extensions>
+                </plugin>
+                <plugin>
+                    <groupId>org.eclipse.tycho</groupId>
+                    <artifactId>target-platform-configuration</artifactId>
+                    <version>${tycho.version}</version>
+                    <configuration>
+                        <pomDependencies>consider</pomDependencies>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.eclipse.tycho</groupId>
+                    <artifactId>tycho-p2-repository-plugin</artifactId>
+                    <version>${tycho.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.eclipse.tycho</groupId>
+                    <artifactId>tycho-p2-director-plugin</artifactId>
+                    <version>${tycho.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
 
-		<plugins>
-			<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>tycho-maven-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>target-platform-configuration</artifactId>
-				<configuration>
-					<environments>
-						<environment>
-							<os>win32</os>
-							<ws>win32</ws>
-							<arch>x86</arch>
-						</environment>
-						<environment>
-							<os>win32</os>
-							<ws>win32</ws>
-							<arch>x86_64</arch>
-						</environment>
-						<environment>
-							<os>macosx</os>
-							<ws>cocoa</ws>
-							<arch>x86_64</arch>
-						</environment>
-						<environment>
-							<os>macosx</os>
-							<ws>cocoa</ws>
-							<arch>x86</arch>
-						</environment>
-						<!-- -->
-						<environment>
-							<os>linux</os>
-							<ws>gtk</ws>
-							<arch>x86</arch>
-						</environment>
-						<environment>
-							<os>linux</os>
-							<ws>gtk</ws>
-							<arch>x86_64</arch>
-						</environment>
-					</environments>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
+        <plugins>
+            <plugin>
+                <groupId>org.eclipse.tycho</groupId>
+                <artifactId>tycho-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.eclipse.tycho</groupId>
+                <artifactId>target-platform-configuration</artifactId>
+                <configuration>
+                    <environments>
+                        <environment>
+                            <os>win32</os>
+                            <ws>win32</ws>
+                            <arch>x86</arch>
+                        </environment>
+                        <environment>
+                            <os>win32</os>
+                            <ws>win32</ws>
+                            <arch>x86_64</arch>
+                        </environment>
+                        <environment>
+                            <os>macosx</os>
+                            <ws>cocoa</ws>
+                            <arch>x86_64</arch>
+                        </environment>
+                        <environment>
+                            <os>macosx</os>
+                            <ws>cocoa</ws>
+                            <arch>x86</arch>
+                        </environment>
+                        <!-- -->
+                        <environment>
+                            <os>linux</os>
+                            <ws>gtk</ws>
+                            <arch>x86</arch>
+                        </environment>
+                        <environment>
+                            <os>linux</os>
+                            <ws>gtk</ws>
+                            <arch>x86_64</arch>
+                        </environment>
+                    </environments>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
-	<modules>
-		<module>../com.buschmais.xo.core.feature</module>
+    <modules>
+        <module>../com.buschmais.xo.core.feature</module>
         <module>../com.buschmais.xo.core.source.feature</module>
-		<module>../com.buschmais.xo.neo4j.feature</module>
+        <module>../com.buschmais.xo.neo4j.feature</module>
         <module>../com.buschmais.xo.neo4j.source.feature</module>
-		<module>../com.buschmais.xo.json.feature</module>
+        <module>../com.buschmais.xo.json.feature</module>
         <module>../com.buschmais.xo.json.source.feature</module>
-		<module>../com.buschmais.xo.repository</module>
-	</modules>
+        <module>../com.buschmais.xo.repository</module>
+    </modules>
 </project>
