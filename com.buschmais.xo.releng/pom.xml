@@ -12,9 +12,9 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<xo.version>0.4.0-SNAPSHOT</xo.version>
-		<tycho.version>0.19.0</tycho.version>
-		<tycho-extras.version>0.19.0</tycho-extras.version>
+		<xo.version>${project.version}</xo.version>
+		<tycho.version>0.20.0</tycho.version>
+		<tycho-extras.version>0.20.0</tycho-extras.version>
 		<jackson.version>1.9.13</jackson.version>
 	</properties>
 
@@ -22,12 +22,12 @@
 		<repository>
 			<id>orbit</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/tools/orbit/downloads/drops/S20131206110810/repository/</url>
+			<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20140525021250/repository/</url>
 		</repository>
 		<repository>
 			<id>kepler</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/releases/kepler</url>
+			<url>http://download.eclipse.org/releases/luna</url>
 		</repository>
 		<repository>
 			<id>neo4j</id>
