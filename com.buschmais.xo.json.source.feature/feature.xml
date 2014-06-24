@@ -2,7 +2,7 @@
 <feature
       id="com.buschmais.xo.json.source.feature"
       label="eXtended Objects - JSON File Store Binding (Sources)"
-      version="0.4.0.qualifier">
+      version="0.4.0.201406241146">
 
    <description>
       eXtended Objects - JSON File Store Binding Feature.
