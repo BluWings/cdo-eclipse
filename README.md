@@ -16,4 +16,4 @@ it will produce `com.buschmais.xo.repository/target/repository` that contains  a
 Continuous Build
 ----------------
 
-[![Build Status](https://secure.travis-ci.org/BluWings/xo-eclipse.png)](http://travis-ci.org/BluWings/xo-eclipse)
+[![Build Status](https://secure.travis-ci.org/SMB-TEC/xo-eclipse.png)](http://travis-ci.org/SMB-TEC/xo-eclipse)
