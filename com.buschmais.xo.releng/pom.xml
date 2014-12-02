@@ -13,8 +13,8 @@
 
     <properties>
         <xo.version>0.5.0-SNAPSHOT</xo.version>
-        <tycho.version>0.20.0</tycho.version>
-        <tycho-extras.version>0.20.0</tycho-extras.version>
+        <tycho.version>0.22.0</tycho.version>
+        <tycho-extras.version>0.22.0</tycho-extras.version>
         <jackson.version>1.9.13</jackson.version>
     </properties>
 
